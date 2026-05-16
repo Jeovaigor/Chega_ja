@@ -7,7 +7,7 @@ export const styles = {
     },
 
     logo: {
-        width: 262,
-        height: 248
+        width: 200,
+        height: 200
     }
 }

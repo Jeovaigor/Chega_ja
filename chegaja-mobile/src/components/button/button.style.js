@@ -1,16 +1,26 @@
-import {COLORS, FONT_SIZE} from "../../constants/theme"
+import {COLORS, FONT, FONT_SIZE} from "../../constants/theme"
 
 export const styles = {
-    btn: {
+    container: {
         width: "100%",
-        height: 50,
-        backgroundColor: COLORS.dark_purple
+        marginTop: 20,
+        alignItems: "center"
+    },
+
+    btn: {
+        width: 179,
+        backgroundColor: COLORS.dark_purple,
+        borderRadius: 6,
+        alignItems: "center",
+        justifyContent: "center"
     },
 
     textos: {
         fontSize: FONT_SIZE.md,
+        fontFamily: FONT.fonte_primary,
         color: "white",
         padding: 8,
-        textAlign: "center"
-    }
+        textAlign: "center",
+        fontWeight: 700
+    },
 }
