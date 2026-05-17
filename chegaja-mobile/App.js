@@ -4,6 +4,7 @@ import { useFonts, Inter_400Regular } from "@expo-google-fonts/inter";
 
 import Login from "./src/screens/login/login.jsx";
 import SignUp from "./src/screens/signup/signup.jsx";
+import Register from "./src/screens/register/register.jsx";
 
 export default function App() {
 
@@ -18,7 +19,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* <Login/> */}
-      <SignUp />
+      {/* <SignUp /> */}
+      <Register />
     </View>
   );
 }

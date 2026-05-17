@@ -10,14 +10,20 @@ function SignUp() {
     const [fullName, setFullName] = useState("");
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
 
 
     return (
-        <ScrollView>
+        <ScrollView 
+            contentContainerStyle={{ flexGrow: 1 }}
+            showsVerticalScrollIndicator={false}
+        >
             <View style={styles.container}>
+                
                 <Logo />
 
                 <View style={styles.formGroup}>
+
                     <View style={styles.form}>
                         <TextBox value={fullName} onChangeText={setFullName} placeholder="Nome Completo:"/>
                     </View>
@@ -31,18 +37,13 @@ function SignUp() {
                     </View>
 
                     <View style={styles.form}>
-                        <TextBox value={password} onChangeText={setPassword} placeholder="Confirme a senha:" isPassword={true}/>
+                        <TextBox value={confirmPassword} onChangeText={setConfirmPassword} placeholder="Confirme a senha:" isPassword={true}/>
                     </View>
 
                     <View style={styles.form}>
                         <Button texto="Próximo passo"/>
                     </View>
 
-                    <View style={styles.form}>
-                        <TouchableOpacity>
-                            <Text style={styles.footerText}>Acessar minha conta</Text>
-                        </TouchableOpacity>
-                    </View>
                 </View>
                 
             </View>

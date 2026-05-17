@@ -4,7 +4,9 @@ const COLORS = {
     background_secondary: "#D9D9D9",
     background_primary: "#FFFFFF",
     background_textbox: "#F0F0F0",
-    text_secondary: "#848484"
+    text_primary: "#000",
+    text_secondary: "#FFF",
+    text_third: "#848484"
 
 }
 

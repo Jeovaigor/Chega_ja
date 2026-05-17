@@ -8,19 +8,19 @@ export const styles = {
     },
 
     btn: {
-        width: 179,
+        width: 180,
         backgroundColor: COLORS.dark_purple,
-        borderRadius: 6,
+        borderRadius: 8,
         alignItems: "center",
         justifyContent: "center"
     },
 
     textos: {
-        fontSize: FONT_SIZE.md,
+        fontSize: FONT_SIZE.sm,
         fontFamily: FONT.fonte_primary,
         color: "white",
         padding: 8,
         textAlign: "center",
-        fontWeight: 700
+        fontWeight: 400
     },
 }

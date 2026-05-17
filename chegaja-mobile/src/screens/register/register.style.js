@@ -16,6 +16,10 @@ export const styles = {
         marginBottom: 20,
     },
 
+    formHorizontal: {
+        flexDirection: "row"
+    },
+
     formGroup: {
         width: "100%",
         marginVertical: 40
@@ -29,5 +33,16 @@ export const styles = {
         textAlign: "center",
         marginTop: 10,
         textDecorationLine: "underline"
+    },
+
+    form1: {
+        width: "70%",
+        marginBottom: 20,
+        paddingRight: 10
+    },
+
+    form2: {
+        width: "30%",
+        marginBottom: 20
     }
 }

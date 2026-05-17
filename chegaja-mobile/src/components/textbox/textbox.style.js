@@ -6,11 +6,11 @@ export const styles = {
     },
 
     input: {
-        width: 331,
+        width: "100%",
         backgroundColor: COLORS.background_textbox,
         padding: 16,
         borderRadius: 10,
-        color: COLORS.text_secondary,
+        color: COLORS.text_third,
         fontSize: FONT_SIZE.sm,
         fontFamily: FONT.fonte_primary,
         outlineStyle: "none"
