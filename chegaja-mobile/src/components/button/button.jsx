@@ -5,7 +5,7 @@ import { View } from "react-native";
 function Button(props) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.btn}>
+            <TouchableOpacity style={styles.btn} onPress={props.onPress}> 
                 <Text style={styles.textos}>{props.texto}</Text>
             </TouchableOpacity>
         </View>

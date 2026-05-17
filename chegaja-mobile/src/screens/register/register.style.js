@@ -3,12 +3,13 @@ import {COLORS, FONT, FONT_SIZE} from "../../constants/theme"
 export const styles = {
     container: {
         flex: 1,
-        maxWidth: 400,
-        // padding: 40,
-        paddingHorizontal: 24,
+        width: "100%",
+        // maxWidth: 400,
+        paddingHorizontal: 30,
         paddingVertical: 20,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        backgroundColor: COLORS.background_primary,
     },
 
     form: {

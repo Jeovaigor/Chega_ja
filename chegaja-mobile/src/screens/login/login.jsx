@@ -5,11 +5,14 @@ import TextBox from "../../components/textbox/textbox.jsx";
 import { useState } from "react";
 import Button from "../../components/button/button.jsx";
 
-function Login() {
+function Login(props) {
 
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
 
+    function realizarLogin() {
+        console.log(userName, password);
+    }
 
     return (
         <View style={styles.container}>
@@ -25,11 +28,11 @@ function Login() {
                 </View>
 
                 <View style={styles.form}>
-                    <Button texto="Entrar"/>
+                    <Button texto="Entrar" onPress={realizarLogin}/>
                 </View>
 
                 <View style={styles.form}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => props.navigation.navigate("signup")}>
                         <Text style={styles.footerText}>Criar conta</Text>
                     </TouchableOpacity>
                 </View>

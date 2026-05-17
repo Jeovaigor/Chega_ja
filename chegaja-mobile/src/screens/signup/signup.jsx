@@ -5,7 +5,7 @@ import TextBox from "../../components/textbox/textbox.jsx";
 import { useState } from "react";
 import Button from "../../components/button/button.jsx";
 
-function SignUp() {
+function SignUp(props) {
 
     const [fullName, setFullName] = useState("");
     const [userName, setUserName] = useState("");
@@ -19,7 +19,7 @@ function SignUp() {
             showsVerticalScrollIndicator={false}
         >
             <View style={styles.container}>
-                
+
                 <Logo />
 
                 <View style={styles.formGroup}>
@@ -41,7 +41,7 @@ function SignUp() {
                     </View>
 
                     <View style={styles.form}>
-                        <Button texto="Próximo passo"/>
+                        <Button texto="Próximo passo" onPress={() => props.navigation.navigate("register")}/>
                     </View>
 
                 </View>

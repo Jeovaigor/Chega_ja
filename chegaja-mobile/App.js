@@ -1,15 +1,12 @@
-import { View } from "react-native-web";
 import { styles } from "./style.js";
 import { useFonts, Inter_400Regular } from "@expo-google-fonts/inter";
 
-import Login from "./src/screens/login/login.jsx";
-import SignUp from "./src/screens/signup/signup.jsx";
-import Register from "./src/screens/register/register.jsx";
+import Routes from "./src/routes.js";
 
 export default function App() {
 
   const [fontsLoaded] = useFonts({
-    Inter: Inter_400Regular,
+    Inter_400Regular,
   });
 
   if (!fontsLoaded) {
@@ -17,11 +14,7 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      {/* <Login/> */}
-      {/* <SignUp /> */}
-      <Register />
-    </View>
+    <Routes/>
   );
 }
 

@@ -20,7 +20,7 @@ const FONT_SIZE = {
 }
 
 const FONT = {
-    fonte_primary: "Inter"
+    fonte_primary: "Inter_400Regular"
 }
 
 export {COLORS, FONT_SIZE, FONT};
