@@ -7,7 +7,7 @@ import Button from "../../components/button/button.jsx";
 
 function Register() {
 
-    const [address, setAddress] = useState("");
+    const [endereco, setEndereco] = useState("");
     const [complemento, setComplemento] = useState("")
     const [bairro, setBairro] = useState("");
     const [city, setCity] = useState("");
@@ -27,7 +27,7 @@ function Register() {
                     <View style={styles.formHorizontal}>
 
                         <View style={styles.form1}>
-                            <TextBox value={address} onChangeText={setAddress} placeholder="Endereço:"/>
+                            <TextBox value={endereco} onChangeText={setEndereco} placeholder="Endereço:"/>
                         </View>
                         
                         <View style={styles.form2}>

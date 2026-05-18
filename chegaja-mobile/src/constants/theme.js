@@ -6,8 +6,13 @@ const COLORS = {
     background_textbox: "#F0F0F0",
     text_primary: "#000",
     text_secondary: "#FFF",
-    text_third: "#848484"
+    text_third: "#848484",
 
+    // cores categoria
+    bg_mercado: "#C6FFA8",
+    bg_fastfood: "#FFAB87",
+    bg_farmacia: "#FFB5B5",
+    bg_churrasco: "#FFFFA3"
 }
 
 const FONT_SIZE = {

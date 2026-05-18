@@ -1,6 +1,7 @@
 import Login from './screens/login/login.jsx';
 import SignUp from './screens/signup/signup.jsx';
 import Register from './screens/register/register.jsx';
+import Home from './screens/home/home.jsx';
 
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,6 +13,10 @@ function Routes() {
     return(
         <NavigationContainer>
             <Stack.Navigator>
+
+                <Stack.Screen name='home' component={Home} options={{
+                    headerShown: false
+                }}/>
 
                 <Stack.Screen name='login' component={Login} options={{headerShown: false}}/>
 
@@ -27,7 +32,11 @@ function Routes() {
                     headerShadowVisible: false,
                     title: "",
                     headerBackTitle: "Voltar"
-                    }}/>
+                }}/>
+
+                
+
+
             </Stack.Navigator>
         </NavigationContainer>
     );
