@@ -34,9 +34,6 @@ function Routes() {
                     headerBackTitle: "Voltar"
                 }}/>
 
-                
-
-
             </Stack.Navigator>
         </NavigationContainer>
     );

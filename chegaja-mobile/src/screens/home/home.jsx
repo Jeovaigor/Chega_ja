@@ -2,8 +2,10 @@ import { View, Image, SafeAreaView, TouchableOpacity, Text } from "react-native"
 import { styles } from "./home.style.js";
 import icons from "../../constants/icons.js";
 import Categorias from "../../components/categorias/categorias.jsx";
-import { categorias } from "../../constants/dados.js";
-
+import { categorias, banners, estabelecimentos, recomendados } from "../../constants/dados.js";
+import Banners from "../../components/banners/banners.jsx";
+import Estabelecimentos from "../../components/estabelecimentos/estabelecimentos.jsx";
+import Recomendados from "../../components/recomendados/recomendados.jsx";
 
 function Home() {
     return (
@@ -23,7 +25,14 @@ function Home() {
                 </View>
             </View>
 
+            <Banners dados={banners}/>
+
+            <Estabelecimentos dados={estabelecimentos}/>
+
+            <Recomendados dados={recomendados}/>
+
             <Categorias dados={categorias}/>
+
         </SafeAreaView>
         
     );

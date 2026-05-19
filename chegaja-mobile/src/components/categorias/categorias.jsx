@@ -1,18 +1,25 @@
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 import { styles } from "./categorias.style.js";
 
 function Categorias(props) {
     return (
         <View>
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            <Text style={styles.titulo}>Categorias</Text>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}
+            style={styles.sectionCategorias}>
                 {
-                    props.dados.map((categorias, index) => {
+                    props.dados.map((categoria, index) => {
                         return (
-                            <View key={index} style={[
-                                styles.categoria, {backgroundColor: categorias.cor}
-                            ]}>
-                                <Image style={styles.icone} source={categorias.icone}/>
-                                <Text style={styles.descricao}>{categorias.descricao}</Text> 
+                            <View key={index}>
+                                <TouchableOpacity  
+                                    style={[
+                                        styles.categoria, 
+                                        {backgroundColor: categoria.cor}
+                                    ]}
+                                >
+                                    <Image style={styles.icone} source={categoria.icone}/>
+                                    <Text style={styles.descricao}>{categoria.descricao}</Text>
+                                </TouchableOpacity> 
                             </View>
                         );
                     })

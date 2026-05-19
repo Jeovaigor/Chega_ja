@@ -1,7 +1,7 @@
 import {COLORS, FONT_SIZE, FONT} from "../../constants/theme"
 
 export const styles = {
-    sectionCategorias: {
+    sectionRecomendados: {
         marginHorizontal: 5,
     },
 
@@ -13,7 +13,7 @@ export const styles = {
         // padding: 15
     },
 
-    categoria: {
+    recomendado: {
         width: 100,
         height: 100,
         marginHorizontal: 5,
