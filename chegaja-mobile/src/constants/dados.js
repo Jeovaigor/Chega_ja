@@ -95,3 +95,42 @@ export const recomendados = [
 //     logotipo: require("../assets/recomendado4.png"),
 //   },
 ];
+
+export const recentes = [
+  {
+    id: 1,
+    nome: "Pizza Prime",
+    descricao: "Pedido realizado recentemente",
+    endereco: "Av. Brasil, 1200",
+    ultimoPedido: "2x Pizza Calabresa",
+    valor: "R$ 49,90",
+    logotipo: require("../assets/recente1.png"),
+  },
+  {
+    id: 2,
+    nome: "Burger House",
+    descricao: "Pedido realizado recentemente",
+    endereco: "Rua das Palmeiras, 78",
+    ultimoPedido: "Combo Burger Duplo",
+    valor: "R$ 32,90",
+    logotipo: require("../assets/recente2.png"),
+  },
+//   {
+//     id: 3,
+//     nome: "Sushi Prime",
+//     descricao: "Pedido realizado recentemente",
+//     endereco: "Av. JK, 450",
+//     ultimoPedido: "Combo Sushi 40 peças",
+//     valor: "R$ 69,90",
+//     logotipo: require("../assets/recente3.png"),
+//   },
+//   {
+//     id: 4,
+//     nome: "Açaí Tropical",
+//     descricao: "Pedido realizado recentemente",
+//     endereco: "Rua Central, 210",
+//     ultimoPedido: "Açaí 700ml Completo",
+//     valor: "R$ 24,90",
+//     logotipo: require("../assets/recente4.png"),
+//   },
+];

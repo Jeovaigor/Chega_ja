@@ -3,8 +3,8 @@ import {COLORS, FONT_SIZE, FONT} from "../../constants/theme"
 export const styles = {
     banner: {
         width: 360,
-        marginTop: 20,
-        marginBottom: 20,
+        marginTop: 5,
+        marginBottom: 10,
         marginHorizontal: 10,
     },
 

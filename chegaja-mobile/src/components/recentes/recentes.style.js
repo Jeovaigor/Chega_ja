@@ -1,19 +1,19 @@
 import {COLORS, FONT_SIZE, FONT} from "../../constants/theme"
 
 export const styles = {
-    sectionEstabelecimentos: {
+    sectionRecentes: {
         marginHorizontal: 5,
     },
 
     titulo: {
         fontSize: 16,
         marginLeft: 15,
-        fontWeight: "500",
+        fontWeight: "500",        
         marginVertical: 10,
         // padding: 15
     },
 
-    estabelecimento: {
+    recente: {
         width: 100,
         height: 100,
         marginHorizontal: 5,
@@ -24,7 +24,7 @@ export const styles = {
         justifyContent: "center",
     },
 
-    logotipo: {
+    icone: {
         width: 40,
         height: 40,
     },
