@@ -1,3 +1,5 @@
+import 'react-native-gesture-handler';
+
 import { styles } from "./style.js";
 import { useFonts, Inter_400Regular } from "@expo-google-fonts/inter";
 
