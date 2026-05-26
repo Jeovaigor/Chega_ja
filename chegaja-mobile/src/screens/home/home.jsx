@@ -25,7 +25,7 @@ function Home() {
             >
     
                 <View style={styles.info}>
-                    <Text style={styles.textSaudacao}>Olá, <Text style={{ fontWeight: "bold" }}>Fulano!</Text> {"\n"} O que vai ser hoje?</Text>
+                    <Text style={styles.textSaudacao}>Olá, <Text style={{ fontWeight: "bold" }}>Fulano!</Text> {"\n"}O que vai ser hoje?</Text>
                     <View style={styles.localizacao}>
                         <Image style={styles.iconLocalizacao} source={icons.localizacao} />
                         <Text style={styles.textLocalizacao}>Rua das Flores, 123</Text>
