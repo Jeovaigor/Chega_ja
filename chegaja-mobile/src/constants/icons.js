@@ -7,5 +7,6 @@ import tab2 from '../assets/tab2.png'
 import tab3 from '../assets/tab3.png'
 import tab4 from '../assets/tab4.png'
 import search from '../assets/search.png'
+import filter from '../assets/filter.png'
 
-export default {logo, logo2, menuHamburguer, localizacao, tab1, tab2, tab3, tab4, search};
+export default {logo, logo2, menuHamburguer, localizacao, tab1, tab2, tab3, tab4, search, filter};

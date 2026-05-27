@@ -46,11 +46,61 @@ export const styles = {
         outlineStyle: "none"
     },
 
-    searchIcon: {
+    iconSearch: {
         width: 18,
         height: 18,
-        marginRight: 10,  // ✅ espaço da borda direita
+        marginRight: 10, 
         tintColor: COLORS.dark_purple,
     },
 
+    containerButtons: {
+        flexDirection: "row",
+        marginTop: 15,
+        alignItems: "center",
+        paddingHorizontal: 15, // paddingHorizontal em vez de marginHorizontal
+        gap: 10,
+    },
+
+    btn: {
+        width: 90,
+        height: 24,
+        paddingHorizontal: 16,  // largura flexível ao invés de fixa
+        paddingVertical: 6,
+        minHeight: 32,          // mínimo aceitável para botões pequenos/decorativos
+        borderRadius: 999,      // pill shape sempre consistente
+        backgroundColor: COLORS.dark_purple,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+
+    textos: {
+        color: COLORS.background_primary,  // color saiu do btn (View) e veio pro Text
+        fontSize: 12,
+        fontWeight: "400",
+    },
+
+    btnFilter: {
+        width: 36,
+        height: 36,
+        borderRadius: 18,           // metade do width/height para círculo perfeito
+        borderWidth: 1.5,
+        borderColor: COLORS.dark_purple,
+        justifyContent: "center",
+        alignItems: "center",
+        marginLeft: "auto",         // mantém o ícone na direita
+    },
+
+    iconFilter: {
+        width: 15,
+        height: 15,
+        tintColor: COLORS.dark_purple,  // herda a cor do tema se for ícone SVG/PNG
+    },
+
+    divider: {
+        height: 1,
+        backgroundColor: COLORS.background_secondary, // ou uma cor mais suave, ex: "#E0E0E0"
+        marginTop: 15,
+        // opacity: 0.15,  // deixa a linha discreta
+        marginHorizontal: 15,
+    },
 }

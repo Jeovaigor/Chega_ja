@@ -12,21 +12,24 @@ function Search() {
             <View style={styles.containerSearch}>
                 <View style={styles.inputWrapper}>
                     <TextInput style={styles.input} placeholder={"Pesquise por empresa ou produto..."}/>
-                    <Image source={icons.search} style={styles.searchIcon} />
+                    <Image source={icons.search} style={styles.iconSearch} />
                 </View>
+
+                <View style={styles.containerButtons}> 
+                    <TouchableOpacity style={styles.btn}> 
+                        <Text style={styles.textos}>Empresa</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btn}> 
+                        <Text style={styles.textos}>Produto</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnFilter}> 
+                        <Image source={icons.filter} style={styles.iconFilter} resizeMode="contain"/>
+                    </TouchableOpacity>
+                </View>
+
+                <View style={styles.divider} />  {/* linha horizontal */}
+
             </View>
-
-            {/* <ScrollView
-                contentContainerStyle={{ flexGrow: 1 }}
-                showsVerticalScrollIndicator={false}
-            >
-    
-                <View style={styles.info}>
-                    <Text style={styles.textSaudacao}>Tela de busca</Text>
-                </View>
-
-                
-            </ScrollView> */}
             
         </SafeAreaView>
     );
