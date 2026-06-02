@@ -134,3 +134,28 @@ export const recentes = [
 //     logotipo: require("../assets/recente4.png"),
 //   },
 ];
+
+export const pedidos = [
+  {
+    id: 1,
+    nome: "Pizza Prime",
+    descricao: "Pedido realizado recentemente",
+    endereco: "Av. Brasil, 1200",
+    ultimoPedido: "2x Pizza Calabresa",
+    valor: "R$ 49,90",
+    status: "Entregue",
+    dataPedido: "2026-06-01T10:30:00",
+    logotipo: require("../assets/recente1.png")
+  },
+  {
+    id: 2,
+    nome: "Burger House",
+    descricao: "Pedido realizado recentemente",
+    endereco: "Rua das Palmeiras, 78",
+    ultimoPedido: "Combo Burger Duplo",
+    valor: "R$ 32,90",
+    status: "Em preparo",
+    dataPedido: "2026-06-01T11:00:00",
+    logotipo: require("../assets/recente2.png")
+  }
+];

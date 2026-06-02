@@ -1,15 +1,15 @@
 import { View, Image, SafeAreaView, TouchableOpacity, Text, ScrollView, TextInput } from "react-native";
 import { styles } from "./search.style";
 import icons from "../../constants/icons.js";
+import Title from "../../components/title/title.jsx";
 import Categorias from "../../components/categorias/categorias.jsx";
 import { categorias} from "../../constants/dados.js";
 
 function Search() {
     return(
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.titulo}>Buscar produtos</Text>
-            </View>
+            
+            <Title titulo="Buscar produto"/>
 
             <View style={styles.containerSearch}>
                 <View style={styles.inputWrapper}>
