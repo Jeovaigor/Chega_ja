@@ -6,42 +6,43 @@ import Order from "../../components/order/order";
 
 function Orders() {
     return(
-        <SafeAreaView style={styles.container}>
-            <View>
-                <Title titulo="Pedidos"/>
-                <View style={styles.divider} />  {/* linha horizontal */}
+        <>
+            <Title titulo="Pedidos"/>
+            <SafeAreaView style={styles.container}>
+                <View>
+                    <View style={styles.divider} />  {/* linha horizontal */}
 
-                <FlatList data={pedidos}
-                    keyExtractor={(pedido) => pedido.id}
-                    showsVerticalScrollIndicator={false}
-                    renderItem={({item}) => {
-                        return <Order 
-                            logotipo={item.logotipo}
-                            nome={item.nome}
-                            valor={item.valor}
-                            status={item.status}
-                            dataPedido={item.dataPedido}
-                            ultimoPedido={item.ultimoPedido}
-                        />
-                    }} 
+                    <FlatList data={pedidos}
+                        keyExtractor={(pedido) => pedido.id}
+                        showsVerticalScrollIndicator={false}
+                        renderItem={({item}) => {
+                            return <Order 
+                                logotipo={item.logotipo}
+                                nome={item.nome}
+                                valor={item.valor}
+                                status={item.status}
+                                dataPedido={item.dataPedido}
+                                ultimoPedido={item.ultimoPedido}
+                            />
+                        }} 
 
-                    contentContainerStyle={styles.containerList}
+                        contentContainerStyle={styles.containerList}
 
-                    ListEmptyComponent={() => {
-                        return (
-                            <View>
-                                <Image source={icons.empty}/>
-                                <Text style={styles.emptyText}>Nenhum favorito encontrado</Text>
-                            </View>
-                        );
-                    }}  
-                
-                />
+                        ListEmptyComponent={() => {
+                            return (
+                                <View>
+                                    <Image source={icons.empty}/>
+                                    <Text style={styles.emptyText}>Nenhum favorito encontrado</Text>
+                                </View>
+                            );
+                        }}  
+                    
+                    />
 
-            </View>
+                </View>
 
-        </SafeAreaView>
-        
+            </SafeAreaView>
+        </>
     );
 }
 

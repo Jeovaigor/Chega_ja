@@ -3,7 +3,7 @@ import {COLORS, FONT, FONT_SIZE} from "../../constants/theme"
 export const styles = {
     card: {
         borderWidth: 1.5,
-        borderColor: "#6B2FD9",
+        borderColor: COLORS.dark_purple,
         borderRadius: 12,
         backgroundColor: "#ffffff",
         paddingHorizontal: 14,
